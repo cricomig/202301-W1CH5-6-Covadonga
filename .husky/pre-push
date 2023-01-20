@@ -1,5 +1,3 @@
-10 sloc)  320 Bytes
-
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
