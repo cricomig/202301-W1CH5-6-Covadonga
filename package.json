@@ -1,0 +1,11 @@
+{
+  "name": "202301-w1ch5-daniel-covadonga",
+  "version": "1.0.0",
+  "description": "Este challenge en parejas consiste en maquetar en HTML y CSS (nada de JS) la web de Travellian [https://www.figma.com/file/GnEBc5u0Hpi5tv4qX09YcW/Travellian-template?node-id=65%3A3968] , a partir del figma proporcionado: versión mobile y versión desktop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
