@@ -4,8 +4,16 @@
   "description": "Este challenge en parejas consiste en maquetar en HTML y CSS (nada de JS) la web de Travellian [https://www.figma.com/file/GnEBc5u0Hpi5tv4qX09YcW/Travellian-template?node-id=65%3A3968] , a partir del figma proporcionado: versión mobile y versión desktop.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "husky install",
+    "sass": "sass sass:css --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
