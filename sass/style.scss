@@ -11,6 +11,7 @@ $offer-background: #fff8f1; //Light orange for the offers boxes background.
 
 $primary-font: "Playfair Display", serif;
 $secondary-font: "Rubik", sans-serif;
+
 // @mixins
 @mixin section {
   padding-left: 1rem;
@@ -41,12 +42,13 @@ $secondary-font: "Rubik", sans-serif;
   font-size: 1.125rem;
   padding-bottom: 3rem;
 }
-@mixin photo() {
+@mixin photo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 4px;
   gap: 4px;
+
   width: 288px;
   height: 314px;
   border-radius: 26px;
@@ -59,7 +61,6 @@ $secondary-font: "Rubik", sans-serif;
   font-family: $secondary-font;
   color: white;
 }
-<<<<<<< HEAD
 @mixin tour {
   display: flex;
   justify-content: space-between;
@@ -91,15 +92,14 @@ html {
   height: 100%;
 }
 
-=======
->>>>>>> main
 .section-home {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 1rem 6.25rem;
-  gap: 6.25rem;
-  height: 75.62rem;
+  padding: 0px 16px 100px;
+  gap: 100px;
+  width: 320px;
+  height: 1210px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/photos/Home-image.avif");
   flex: none;
@@ -108,9 +108,10 @@ html {
 
   &__header {
     align-items: center;
-    padding: 1.5rem 1rem;
-    gap: 2rem;
-    height: 6.12rem;
+    padding: 24px 16px;
+    gap: 32px;
+    width: 288px;
+    height: 98px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -121,12 +122,12 @@ html {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 0;
-      gap: 0.25rem;
+      padding: 0px;
+      gap: 4px;
     }
     &__burger {
-      width: 3.12rem;
-      height: 3.12rem;
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -135,60 +136,69 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0;
-    gap: 1rem;
-    height: 13.56rem;
+    padding: 0px;
+    gap: 16px;
+    width: 288px;
+    height: 217px;
 
     & h1 {
-      height: 9.93rem;
+      width: 288px;
+      height: 159px;
       font-family: "Playfair Display";
       font-style: normal;
       font-weight: 400;
-      font-size: 2.5rem;
-      line-height: 3.31rem;
+      font-size: 40px;
+      line-height: 53px;
       color: #ffffff;
     }
     & p {
-      height: 2.62rem;
+      width: 288px;
+      height: 42px;
       font-family: "Rubik";
       font-style: normal;
       font-weight: 400;
-      font-size: 1.12rem;
-      line-height: 1.31rem;
+      font-size: 18px;
+      line-height: 21px;
       color: #ffffff;
     }
   }
 
   &__main {
-    padding: 0;
-    height: 37.18rem;
+    padding: 0px;
+    width: 288px;
+    height: 595px;
     background: #ffffff;
-    border-radius: 1rem;
-    gap: 2.5rem;
+    border-radius: 16px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: space-between;
 
     &__form {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 288px;
+      height: 595px;
+
       &__inputs {
-        padding-left: 1.25rem;
+        padding-left: 20px;
         font-family: $secondary-font;
-        font-size: 0.87rem;
+        font-size: 14px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        height: 21.18rem;
+        width: 288px;
+        height: 467px;
 
         & .line {
-          border-top: 0.06rem solid black;
-          height: 0.12rem;
+          border-top: 1px solid black;
+          height: 2px;
+          width: 248px;
           padding: 0;
         }
 
@@ -197,18 +207,19 @@ html {
           font-family: $primary-font;
           border: 0;
           font-weight: bold;
-          padding-top: 0.75rem;
+          padding-top: 12px;
         }
       }
       &__book {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 2.5rem 1.25rem;
-        margin-top: 5.62rem;
-        height: 9.15rem;
+        padding: 40px 20px;
+        margin-top: 90px;
+        width: 288px;
+        height: 128px;
         background: #ff7757;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 0px 0px 16px 16px;
 
         & input {
           opacity: 0;
@@ -216,7 +227,7 @@ html {
 
         & label {
           font-family: $primary-font;
-          font-size: 2.25rem;
+          font-size: 36px;
           color: #ffffff;
         }
       }
@@ -224,58 +235,6 @@ html {
   }
 }
 
-<<<<<<< HEAD
-=======
-.section-destination {
-  @include section();
-
-  &__header {
-    @include section-header();
-  }
-
-  &__title {
-    @include title();
-  }
-
-  &__sub {
-    @include subtitle();
-  }
-
-  &__photos {
-    @include photo();
-    gap: 1.5rem;
-    flex-direction: row;
-  }
-
-  &__arrows {
-    margin-top: 9rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
-.section-offer {
-  @include section();
-
-  &__header {
-    @include section-header();
-  }
-
-  &__title {
-    @include title();
-  }
-
-  &__sub {
-    @include subtitle();
-  }
-}
-
-html {
-  height: 100%;
-}
-
->>>>>>> main
 body {
   min-height: 100%;
   width: 100%;
@@ -316,58 +275,38 @@ body {
   }
   &-nav {
     display: flex;
-<<<<<<< HEAD
     gap: 2rem;
-=======
-    gap: 1rem;
->>>>>>> main
     &__text {
       color: $primary-color;
       font-family: $secondary-font;
       font-size: 1.5rem;
     }
-<<<<<<< HEAD
     &__arrow {
       color: $primary-color;
     }
-=======
->>>>>>> main
   }
 }
 .section-planners {
   @include section;
   .planners-header {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 4rem;
     &__title {
       @include title(underline);
-=======
-    @include section-header;
-    &__title {
-      @include title();
->>>>>>> main
     }
     &__subtitle {
       @include subtitle;
     }
     &__button {
-<<<<<<< HEAD
       @include button();
-=======
-      background-color: $primary-color;
-      border-radius: 0.75rem;
-      font-size: 2rem;
->>>>>>> main
     }
     &__text {
       font-family: $secondary-font;
       color: white;
     }
   }
-<<<<<<< HEAD
   .rome {
     @include tour-plan();
   }
@@ -383,6 +322,4 @@ body {
   .budapest {
     @include tour-plan;
   }
-=======
->>>>>>> main
 }
