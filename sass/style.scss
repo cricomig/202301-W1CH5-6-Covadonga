@@ -12,6 +12,26 @@ $offer-background: #fff8f1; //Light orange for the offers boxes background.
 $primary-font: "Playfair Display", serif;
 $secondary-font: "Rubik", sans-serif;
 
+// @mixins
+
+@mixin title {
+  color: $black;
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 0.2rem;
+  font-family: $primary-font;
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: 3.333rem;
+}
+@mixin subtitule {
+  color: $subtitle-color;
+  font-family: $secondary-font;
+  font-size: 1.125rem;
+  padding-bottom: 3rem;
+}
+
 html {
   height: 100%;
 }
@@ -34,22 +54,11 @@ body {
     gap: 4rem;
   }
   &__title {
-    color: $black;
-    text-decoration: underline;
-    text-decoration-color: $primary-color;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: 0.2rem;
-    font-family: $primary-font;
-    font-size: 3.375rem;
-    font-weight: 400;
-    line-height: 3.333rem;
+    @include title;
   }
 
   &__subtitle {
-    color: $subtitle-color;
-    font-family: $secondary-font;
-    font-size: 1.125rem;
-    padding-bottom: 3rem;
+    @include subtitule;
   }
 
   &-article {
@@ -91,6 +100,31 @@ body {
       color: $primary-color;
       font-family: $secondary-font;
       font-size: 1.5rem;
+    }
+  }
+}
+.section-planners {
+  .planners-header {
+    &__title {
+      color: $black;
+      font-family: $primary-font;
+      font-size: 3.375rem;
+      font-weight: 400;
+      line-height: 3.333rem;
+    }
+    &__subtitle {
+      color: $subtitle-color;
+      font-family: $secondary-font;
+      font-size: 1.125rem;
+      padding-bottom: 3rem;
+    }
+    &__button {
+      background-color: $primary-color;
+      border-radius: 0.75rem;
+    }
+    &__text {
+      font-family: $secondary-font;
+      color: white;
     }
   }
 }

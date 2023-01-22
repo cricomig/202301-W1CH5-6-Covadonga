@@ -76,4 +76,26 @@ body {
   font-size: 1.5rem;
 }
 
+.section-planners .planners-header__title {
+  color: #172432;
+  font-family: "Playfair Display", serif;
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: 3.333rem;
+}
+.section-planners .planners-header__subtitle {
+  color: #767e86;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  padding-bottom: 3rem;
+}
+.section-planners .planners-header__button {
+  background-color: #ff7757;
+  border-radius: 0.75rem;
+}
+.section-planners .planners-header__text {
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
