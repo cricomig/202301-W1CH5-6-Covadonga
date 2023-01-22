@@ -39,7 +39,7 @@ body {
 .blog-article {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: flex-start;
 }
 .blog-article__title {
@@ -65,6 +65,15 @@ body {
   height: 314px;
   border-radius: 26px;
   border: none;
+}
+.blog-nav {
+  display: flex;
+  gap: 1rem;
+}
+.blog-nav__text {
+  color: #ff7757;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
