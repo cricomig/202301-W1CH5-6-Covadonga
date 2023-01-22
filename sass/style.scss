@@ -14,7 +14,10 @@ $secondary-font: "Rubik", sans-serif;
 
 // @mixins
 @mixin section {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -25,18 +28,15 @@ $secondary-font: "Rubik", sans-serif;
   flex-direction: column;
   gap: 4rem;
 }
-@mixin title($underline: non) {
+@mixin title($border-bottom: 0.1rem solid #ff7757) {
   color: $black;
-  text-decoration: $underline;
-  text-decoration-color: $primary-color;
-  text-underline-offset: 2rem;
-  text-decoration-thickness: 0.2rem;
   font-family: $primary-font;
-  font-size: 3.375rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 3.333rem;
+  border-bottom: $border-bottom;
 }
-@mixin subtitule {
+@mixin subtitle {
   color: $subtitle-color;
   font-family: $secondary-font;
   font-size: 1.125rem;
@@ -57,81 +57,41 @@ $secondary-font: "Rubik", sans-serif;
 @mixin button {
   background-color: $primary-color;
   border-radius: 0.75rem;
+  padding: 1.25rem;
+  font-family: $secondary-font;
+  color: white;
+}
+@mixin tour {
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondary-font;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+@mixin tour-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  &__photo {
+    @include photo();
+  }
+  &__price {
+    @include tour();
+  }
+  &-punt {
+    @include tour();
+    align-items: cent;
+
+    &__star {
+      display: flex;
+    }
+  }
 }
 
 html {
   height: 100%;
 }
 
-body {
-  min-height: 100%;
-  width: 100%;
-}
-
-.blog {
-  @include section;
-
-  &__header {
-    @include section-header;
-  }
-  &__title {
-    @include title(underline);
-  }
-
-  &__subtitle {
-    @include subtitule;
-  }
-
-  &-article {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: flex-start;
-
-    &__title {
-      @include title;
-    }
-    &__text {
-      color: $black;
-      font-family: $primary-font;
-      font-size: $subtitle-color;
-      line-height: 2.625rem;
-    }
-    &__photo {
-      @include photo;
-    }
-  }
-  &-nav {
-    display: flex;
-    gap: 1rem;
-    &__text {
-      color: $primary-color;
-      font-family: $secondary-font;
-      font-size: 1.5rem;
-    }
-  }
-}
-.section-planners {
-  @include section;
-  .planners-header {
-    @include section-header;
-    &__title {
-      @include title(underline);
-    }
-    &__subtitle {
-      @include subtitule;
-    }
-    &__button {
-      background-color: $primary-color;
-      border-radius: 0.75rem;
-      font-size: 2rem;
-    }
-    &__text {
-      font-family: $secondary-font;
-      color: white;
-    }
-  }
-}
 .section-home {
   display: flex;
   flex-direction: column;
@@ -272,5 +232,94 @@ body {
         }
       }
     }
+  }
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+.blog {
+  @include section;
+
+  &__header {
+    @include section-header;
+  }
+  &__title {
+    @include title(underline);
+  }
+
+  &__subtitle {
+    @include subtitle;
+  }
+
+  &-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    &__title {
+      @include title;
+    }
+    &__text {
+      color: $black;
+      font-family: $primary-font;
+      font-size: $subtitle-color;
+      line-height: 2.625rem;
+    }
+    &__photo {
+      @include photo;
+    }
+  }
+  &-nav {
+    display: flex;
+    gap: 2rem;
+    &__text {
+      color: $primary-color;
+      font-family: $secondary-font;
+      font-size: 1.5rem;
+    }
+    &__arrow {
+      color: $primary-color;
+    }
+  }
+}
+.section-planners {
+  @include section;
+  .planners-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+    &__title {
+      @include title(underline);
+    }
+    &__subtitle {
+      @include subtitle;
+    }
+    &__button {
+      @include button();
+    }
+    &__text {
+      font-family: $secondary-font;
+      color: white;
+    }
+  }
+  .rome {
+    @include tour-plan();
+  }
+  .paris {
+    @include tour-plan();
+  }
+  .barcelona {
+    @include tour-plan();
+  }
+  .barcelona {
+    @include tour-plan();
+  }
+  .budapest {
+    @include tour-plan;
   }
 }
