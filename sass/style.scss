@@ -57,7 +57,6 @@ $secondary-font: "Rubik", sans-serif;
   border-radius: 0.75rem;
 }
 
-@media (max-width: 320px) {
   .section-home {
     display: flex;
     flex-direction: column;
@@ -387,4 +386,4 @@ $secondary-font: "Rubik", sans-serif;
       }
     }
   }
-}
+
