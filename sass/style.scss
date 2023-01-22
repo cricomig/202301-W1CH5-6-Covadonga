@@ -1,0 +1,130 @@
+// Color variables
+
+$primary-color: #ff7757; //Buttons, underlines and links.
+$black: #172432; //Footer, back buttons, h1 and p.
+$subtitle-color: #767e86; //Subtitles, offers and newsletter.
+$newsletter-background: #ffe8d4; //Light orange for the input background color of the newsletter.
+$experiences-background: #f5f6f7; //Light gray for the review's background box.
+$offer-background: #fff8f1; //Light orange for the offers boxes background.
+
+// Font variables
+
+$primary-font: "Playfair Display", serif;
+$secondary-font: "Rubik", sans-serif;
+
+// @mixins
+
+@mixin title($underline: non) {
+  color: $black;
+  text-decoration: $underline;
+  text-decoration-color: $primary-color;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 0.2rem;
+  font-family: $primary-font;
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: 3.333rem;
+}
+@mixin subtitule {
+  color: $subtitle-color;
+  font-family: $secondary-font;
+  font-size: 1.125rem;
+  padding-bottom: 3rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+.blog {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__title {
+    @include title;
+  }
+
+  &__subtitle {
+    @include subtitule;
+  }
+
+  &-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    &__title {
+      color: $black;
+      font-family: $primary-font;
+      font-size: 3.375rem;
+      font-weight: 400;
+      line-height: 3.333rem;
+    }
+    &__text {
+      color: $black;
+      font-family: $primary-font;
+      font-size: $subtitle-color;
+      line-height: 2.625rem;
+    }
+    &__photo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4px;
+      gap: 4px;
+
+      width: 288px;
+      height: 314px;
+      border-radius: 26px;
+      border: none;
+    }
+  }
+  &-nav {
+    display: flex;
+    gap: 1rem;
+    &__text {
+      color: $primary-color;
+      font-family: $secondary-font;
+      font-size: 1.5rem;
+    }
+  }
+}
+.section-planners {
+  .planners-header {
+    &__title {
+      color: $black;
+      font-family: $primary-font;
+      font-size: 3.375rem;
+      font-weight: 400;
+      line-height: 3.333rem;
+    }
+    &__subtitle {
+      color: $subtitle-color;
+      font-family: $secondary-font;
+      font-size: 1.125rem;
+      padding-bottom: 3rem;
+    }
+    &__button {
+      background-color: $primary-color;
+      border-radius: 0.75rem;
+    }
+    &__text {
+      font-family: $secondary-font;
+      color: white;
+    }
+  }
+}
