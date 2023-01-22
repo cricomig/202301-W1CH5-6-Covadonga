@@ -55,7 +55,44 @@ $secondary-font: "Rubik", sans-serif;
 @mixin button {
   background-color: $primary-color;
   border-radius: 0.75rem;
+  padding: 1.25rem;
+  font-family: $secondary-font;
+  color: white;
 }
+<<<<<<< HEAD
+@mixin tour {
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondary-font;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+@mixin tour-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  &__photo {
+    @include photo();
+  }
+  &__price {
+    @include tour();
+  }
+  &-punt {
+    @include tour();
+    align-items: cent;
+
+    &__star {
+      display: flex;
+    }
+  }
+}
+
+html {
+  height: 100%;
+}
+
+=======
+>>>>>>> main
 .section-home {
   display: flex;
   flex-direction: column;
@@ -187,6 +224,8 @@ $secondary-font: "Rubik", sans-serif;
   }
 }
 
+<<<<<<< HEAD
+=======
 .section-destination {
   @include section();
 
@@ -236,6 +275,7 @@ html {
   height: 100%;
 }
 
+>>>>>>> main
 body {
   min-height: 100%;
   width: 100%;
@@ -276,32 +316,73 @@ body {
   }
   &-nav {
     display: flex;
+<<<<<<< HEAD
+    gap: 2rem;
+=======
     gap: 1rem;
+>>>>>>> main
     &__text {
       color: $primary-color;
       font-family: $secondary-font;
       font-size: 1.5rem;
     }
+<<<<<<< HEAD
+    &__arrow {
+      color: $primary-color;
+    }
+=======
+>>>>>>> main
   }
 }
 .section-planners {
   @include section;
   .planners-header {
+<<<<<<< HEAD
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+    &__title {
+      @include title(underline);
+=======
     @include section-header;
     &__title {
       @include title();
+>>>>>>> main
     }
     &__subtitle {
       @include subtitle;
     }
     &__button {
+<<<<<<< HEAD
+      @include button();
+=======
       background-color: $primary-color;
       border-radius: 0.75rem;
       font-size: 2rem;
+>>>>>>> main
     }
     &__text {
       font-family: $secondary-font;
       color: white;
     }
   }
+<<<<<<< HEAD
+  .rome {
+    @include tour-plan();
+  }
+  .paris {
+    @include tour-plan();
+  }
+  .barcelona {
+    @include tour-plan();
+  }
+  .barcelona {
+    @include tour-plan();
+  }
+  .budapest {
+    @include tour-plan;
+  }
+=======
+>>>>>>> main
 }
