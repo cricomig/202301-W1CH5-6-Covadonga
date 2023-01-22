@@ -56,6 +56,8 @@ $secondary-font: "Rubik", sans-serif;
   background-color: $primary-color;
   border-radius: 0.75rem;
 }
+
+@media (max-width:320px){
 .section-home {
   display: flex;
   flex-direction: column;
@@ -230,6 +232,83 @@ $secondary-font: "Rubik", sans-serif;
   &__sub {
     @include subtitle();
   }
+
+  &__first-dest {
+    gap: 1.5rem;
+    flex-direction: row;
+    border-radius: 26px;
+    background-color: #fff8f1;
+    margin-bottom: 4rem;
+    padding: 1rem;
+
+    & h2 {
+      padding-top: 1rem;
+    }
+
+    & p {
+      border-bottom: 26px;
+    }
+
+    & img {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__second-dest {
+    gap: 1.5rem;
+    flex-direction: row;
+    border-radius: 26px;
+    background-color: #fff8f1;
+    margin-bottom: 4rem;
+    display: none;
+    padding: 1rem;
+
+    & h2 {
+      padding-top: 1rem;
+    }
+
+    & p {
+      border-bottom: 26px;
+    }
+
+    & img {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__third-dest {
+    gap: 1.5rem;
+    flex-direction: row;
+    border-radius: 26px;
+    background-color: #fff8f1;
+    margin-bottom: 4rem;
+    display: none;
+    padding: 1rem;
+
+    & h2 {
+      padding-top: 1rem;
+    }
+
+    & p {
+      border-bottom: 26px;
+    }
+
+    & img {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+  &__arrows {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 html {
@@ -304,4 +383,5 @@ body {
       color: white;
     }
   }
+}
 }
