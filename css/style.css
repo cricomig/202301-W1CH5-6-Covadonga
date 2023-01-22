@@ -6,7 +6,7 @@
   gap: 100px;
   width: 320px;
   height: 1210px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/photos/Home-image.avif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photos/Home-image.avif");
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -30,13 +30,7 @@
   padding: 0px;
   gap: 4px;
 }
-.section-home__header__nav__logo__detail__favicon {
-  height: 27.52px;
-}
-.section-home__header__nav__logo__detail__word {
-  height: 27.52px;
-}
-.section-home__header__nav__logo__burger {
+.section-home__header__burger {
   width: 50px;
   height: 50px;
 }
@@ -71,16 +65,68 @@
   color: #ffffff;
 }
 .section-home__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding: 0px;
-  gap: 60px;
   width: 288px;
   height: 595px;
   background: #ffffff;
   border-radius: 16px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.section-home__main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 288px;
+  height: 595px;
+}
+.section-home__main__form__inputs {
+  padding-left: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 288px;
+  height: 467px;
+}
+.section-home__main__form__inputs .line {
+  border-top: 1px solid black;
+  height: 2px;
+  width: 248px;
+  padding: 0;
+}
+.section-home__main__form__inputs input {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  border: 0;
+  font-weight: bold;
+  padding-top: 12px;
+}
+.section-home__main__form__book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: 90px;
+  width: 288px;
+  height: 128px;
+  background: #ff7757;
+  border-radius: 0px 0px 16px 16px;
+}
+.section-home__main__form__book input {
+  opacity: 0;
+}
+.section-home__main__form__book label {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

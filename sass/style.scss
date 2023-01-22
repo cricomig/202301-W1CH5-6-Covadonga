@@ -21,7 +21,7 @@ $secondary-font: "Rubik", sans-serif;
   width: 320px;
   height: 1210px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/images/photos/Home-image.avif");
+    url("../images/photos/Home-image.avif");
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -44,20 +44,10 @@ $secondary-font: "Rubik", sans-serif;
       justify-content: space-between;
       padding: 0px;
       gap: 4px;
-
-      &__detail {
-        &__favicon {
-          height: 27.52px;
-        }
-
-        &__word {
-          height: 27.52px;
-        }
-      }
-      &__burger {
-        width: 50px;
-        height: 50px;
-      }
+    }
+    &__burger {
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -68,45 +58,99 @@ $secondary-font: "Rubik", sans-serif;
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-
     width: 288px;
     height: 217px;
+
     & h1 {
       width: 288px;
       height: 159px;
-
       font-family: "Playfair Display";
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
       line-height: 53px;
-
       color: #ffffff;
     }
     & p {
       width: 288px;
       height: 42px;
-
       font-family: "Rubik";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 21px;
-
       color: #ffffff;
     }
   }
 
   &__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding: 0px;
-    gap: 60px;
     width: 288px;
     height: 595px;
     background: #ffffff;
     border-radius: 16px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 288px;
+      height: 595px;
+
+      &__inputs {
+        padding-left: 20px;
+        font-family: $secondary-font;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 288px;
+        height: 467px;
+
+         & .line {
+          border-top: 1px solid black;
+          height: 2px;
+          width: 248px;
+          padding: 0;
+        }
+
+        & input {
+          display: flex;
+          font-family: $primary-font;
+          border: 0;
+          font-weight: bold;
+          padding-top: 12px;
+        }
+      }
+      &__book {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 20px;
+        margin-top: 90px;
+        width: 288px;
+        height: 128px;
+        background: #ff7757;
+        border-radius: 0px 0px 16px 16px;
+
+        & input {
+          opacity: 0;
+        }
+
+        & label {
+          font-family: $primary-font;
+          font-size: 36px;
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
