@@ -21,7 +21,7 @@ body {
 }
 .blog__title {
   color: #172432;
-  text-decoration: non;
+  text-decoration: underline;
   text-decoration-color: #ff7757;
   text-underline-offset: 2rem;
   text-decoration-thickness: 0.2rem;
@@ -44,6 +44,10 @@ body {
 }
 .blog-article__title {
   color: #172432;
+  text-decoration: non;
+  text-decoration-color: #ff7757;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 0.2rem;
   font-family: "Playfair Display", serif;
   font-size: 3.375rem;
   font-weight: 400;

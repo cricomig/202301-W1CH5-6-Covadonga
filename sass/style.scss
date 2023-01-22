@@ -31,6 +31,18 @@ $secondary-font: "Rubik", sans-serif;
   font-size: 1.125rem;
   padding-bottom: 3rem;
 }
+@mixin photo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 4px;
+
+  width: 288px;
+  height: 314px;
+  border-radius: 26px;
+  border: none;
+}
 
 html {
   height: 100%;
@@ -54,7 +66,7 @@ body {
     gap: 4rem;
   }
   &__title {
-    @include title;
+    @include title(underline);
   }
 
   &__subtitle {
@@ -68,11 +80,7 @@ body {
     align-items: flex-start;
 
     &__title {
-      color: $black;
-      font-family: $primary-font;
-      font-size: 3.375rem;
-      font-weight: 400;
-      line-height: 3.333rem;
+      @include title;
     }
     &__text {
       color: $black;
@@ -81,16 +89,7 @@ body {
       line-height: 2.625rem;
     }
     &__photo {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 4px;
-      gap: 4px;
-
-      width: 288px;
-      height: 314px;
-      border-radius: 26px;
-      border: none;
+      @include photo;
     }
   }
   &-nav {
