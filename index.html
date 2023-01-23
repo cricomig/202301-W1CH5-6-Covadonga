@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf=8">
+  <meta charset="UTF=8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -10,244 +10,59 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Travellian</title>
-  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel=" shortcut icon" href="./favicon.svg" type="image/x-icon">
 </head>
 
 <body>
-  <section class="section-home">
-    <header class="section-home__header">
-      <div class="section-home__header__nav__logo">
-        <img src="./images/icons/word.svg" alt="word" class="section-home__header__nav__logo__detail__word">
-        <div class="section-home__header__nav__burger">
-          <img src="./images/icons/hamburger 1.svg" alt="icon">
+  <header class="header">
+    <div class="header__top">
+      <div class="__logo">
+        <img src="./images/icons/word.svg" alt="word">
+      </div>
+      <div class="__mobile">
+        <img src="./images/icons/hamburger 1.svg" alt="icon">
+      </div>
+      <div id="__desktop">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Travel</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <div>
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
         </div>
       </div>
-    </header>
-    <div class="section-home__title">
+    </div>
+    <div class="header__title">
       <h1>Start your unforgettable journey with us.</h1>
       <p>The best travel for your journey begins now</p>
     </div>
-    <article class="section-home__main">
-      <form action="" class="section-home__main__form">
-        <div class="section-home__main__form__inputs">
-          <div>
-            <label for="destination" class="label">DESTINATION</label>
-            <input placeholder="Dubai" type="text" id="destination">
-            <div class="line"></div>
-          </div>
 
-          <div>
-            <label for="person">PERSON</label>
-            <input placeholder="2" type="text" id="person">
-            <div class="line"></div>
-          </div>
-
-          <div>
-            <label for="check-in">CHECK IN</label>
-            <input placeholder="Sun, 17th Sep 2020" type="text" id="check-in">
-            <div class="line"></div>
-          </div>
-
-          <div>
-            <label for="check-out">CHECK OUT</label>
-            <input placeholder="Tue,17th Oct 2020" type="text" id="check-out">
-            <div class="line"></div>
-          </div>
-
-        </div>
-        <div class="section-home__main__form__book">
-          <label for="book-now">Book Now</label>
-          <input type="submit" name="book-now" id="book-now">
-          <img src="./images/icons/arrow.svg" alt="arrow" id="book-now">
-        </div>
-      </form>
-    </article>
-  </section>
-
-  <section class="section-destination">
-    <header class="section-destination__header">
-      <h1 class="section-destination__title">Popular destinations</h1>
-      <p class="section-destination__sub">Most popular destinations around the world, from historical places
-        to natural wonders.</p>
-    </header>
-    <article class="section-destination__main">
-      <div class="section-destination__photos">
-        <img src="./images/photos/berlin.svg" alt="berlin">
-        <img src="./images/photos/uk.svg" alt="uk">
-        <img src="./images/photos/uk.svg" alt="venice">
+    <form action="#" class="header__form">
+      <div class="__label">
+        <label for="destination">DESTINATION</label>
+        <input placeholder="Dubai" type="text" id="destination">
       </div>
-      <div class="section-destination__arrows">
-        <a href="#"><img src="./images/icons/Slide-left.svg"></a>
-        <a href="#"> <img src="./images/icons/Slide-right.svg"></a>
+      <div class="__person">
+        <label for="person">PERSON</label>
+        <input placeholder="2" type="text" id="person">
       </div>
-    </article>
-  </section>
-
-  <section class="section-offer">
-    <header class="section-offer__header">
-      <h1 class="section-offer__title">Special Offer</h1>
-      <p class="section-offer__sub">Check out our special offer and discounts</p>
-    </header>
-    <article class="section-offer__main">
-      <div class="section-offer__first-dest">
-        <img src="./images/photos/lisbon.svg" alt="lisbon">
-        <h2>Lisbon, Portugal</h2>
-        <img src="./images/icons/star.svg" alt="rating">
-        <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-          Passage and
-          going through the cites of the world in classical literature.</p>
-        <img src="./images/icons/price.svg">
-        <a href="#"><img src="./images/icons/details.svg"></a>
+      <div class="__chkin">
+        <label for="check-in">CHECK IN</label>
+        <input placeholder="Sun, 17th Sep 2020" type="text" id="check-in">
       </div>
-      <div class="section-offer__second-dest">
-        <img src="./images/photos/athens.svg" alt="athens">
-        <h2>Athens, Greece</h2>
-        <img src="./images/icons/star.svg" alt="rating">
-        <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-          Passage and
-          going through the cites of the world in classical literature.</p>
-        <img src="./images/icons/price.svg">
-        <a href="#"><img src="./images/icons/details.svg"></a>
+      <div class="__chkout">
+        <label for="check-out">CHECK OUT</label>
+        <input placeholder="Tue,17th Oct 2020" type="text" id="check-out">
       </div>
-      <div class="section-offer__third-dest">
-        <img src="./images/photos/rome.svg" alt="rome">
-        <h2>Rome, Italy</h2>
-        <img src="./images/icons/star.svg" alt="rating">
-        <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
-          Passage and
-          going through the cites of the world in classical literature.</p>
-        <img src="./images/icons/price.svg">
-        <a href="#"><img src="./images/icons/details.svg"></a>
+      <div class="__book">
+        <label for="book-now">Book Now</label>
+        <input type="submit" name="book-now" id="book-now">
+        <img src="./images/icons/arrow.svg" alt="arrow" id="book-now">
       </div>
-      <div class="section-offer__arrows">
-        <a href="#"><img src="./images/icons/Slide-left.svg"></a>
-        <a href="#"> <img src="./images/icons/Slide-right.svg"></a>
-      </div>
-
-    </article>
-  </section>
-
-  <section class="blog">
-    <header class="blog__header">
-      <h1 class="blog__title">Our Blog</h1>
-      <p class="blog__subtitle">An insight the incredible experience in the world</p>
-    </header>
-    <article class="blog-article">
-      <img class="blog-article__photo" src="images/photos/Blog-photo.png" alt="">
-      <h2 class="blog-article__title"> Beautiful Italy
-        Let’s travel</h1>
-        <p class="blog-article__text">But I must explain to you how all this mistaken idea of denouncing pleasure
-          and praising pain was born and I will give
-          you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
-          master-
-          builder of human happiness. No one rejects, dislike, or avoids pleasure itself, because it is pleasure, but
-          because those
-          who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
-          is
-          there
-          anyone who loves or pursues.</p>
-
-    </article>
-    <div class="blog-nav">
-      <nav>
-        <a href="#" class="blog-nav__text">Learn more</a>
-      </nav>
-      <img class="blog-nav__arrow" src="images/icons/Arrow-Right 1.svg" alt="Right arrow.">
-    </div>
-
-    <article>
-
-    </article>
-  </section>
-
-  <section class="section-planners">
-    <header class="planners-header">
-      <h1 class="planners-header__title">Trip Planners</h1>
-      <p class="planners-header__subtitle">20 years from now you will be more disappointed by the things that you
-        didn’t do. Stop regretting and start traveling,
-        start throwing off the bowlines.</p>
-      <button class="planners-header__button">
-        <p class="planners-header__text">View all trip plans</p>
-      </button>
-    </header>
-    <section class="rome">
-      <img src="./images/photos/Colisseum-photo.png" alt="A lovely photo of the coliseum at sunset."
-        class="destination__photo">
-      <div class="rome__price">
-        <p>GUIDED TOUR</p><span>€99/day</span>
-      </div>
-      <div class="rome__name">
-        <p>Rome City Tour</p>
-      </div>
-      <div class="rome-punt">
-        <span class="rome-punt__star">
-          <img src="/images/icons/star.svg" alt="Little yellow star">
-
-        </span>
-        <p class="rome-punt__tour">7 Days tour</p>
-      </div>
-    </section>
-    <section class="paris">
-      <img src="./images/photos/Eiffel-Photo.png" alt="A lovely photo of the coliseum at sunset." class="paris__photo">
-      <div class="paris__price">
-        <p>GUIDED TOUR</p><span>€99/day</span>
-      </div>
-      <div class="paris__name">
-        <p>Paris City Tour</p>
-      </div>
-      <div class="paris-punt">
-        <span class="paris-punt__star">
-          <img src="/images/icons/star.svg" alt="Little yellow star">
-        </span>
-        <p class="paris-punt__tour">7 Days tour</p>
-      </div>
-    </section>
-    <section class="barcelona">
-      <img src="./images/photos/Barcelona-photo.png" alt="A lovely photo of the coliseum at sunset."
-        class="barcelona__photo">
-      <div class="barcelona__price">
-        <p>GUIDED TOUR</p><span>€99/day</span>
-      </div>
-      <div class="barcelona__name">
-        <p>Barcelona City Tour</p>
-      </div>
-      <div class="barcelona-punt">
-        <span class="barcelona-punt__star">
-          <img src="/images/icons/star.svg" alt="Little yellow star">
-
-        </span>
-        <p class="barcelona-punt__tour">7 Days tour</p>
-      </div>
-    </section>
-    <section class="budapest">
-      <img src="./images/photos/Budapest-photo.png" alt="A lovely photo of the coliseum at sunset."
-        class="budapest__photo">
-      <div class="budapest__price">
-        <p>GUIDED TOUR</p><span>€99/day</span>
-      </div>
-      <div class="budapest__name">
-        <p>Budapest City Tour</p>
-      </div>
-      <div class="budapest-punt">
-        <span class="barcelona-punt__star">
-          <img src="/images/icons/star.svg" alt="Little yellow star">
-
-        </span>
-        <p class="budapest-punt__tour">7 Days tour</p>
-      </div>
-    </section>
-  </section>
-
-  <section class="section-experiences">
-    <header class="section-experiences__header">
-    </header>
-    <article class="section-experiences__main">
-    </article>
-  </section>
-  <footer class="footer">
-    <form action="" class="footer__form"></form>
-    <nav class="footer__nav"></nav>
-  </footer>
+    </form>
+  </header>
 </body>
 
 </html>
