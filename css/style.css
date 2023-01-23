@@ -1,12 +1,12 @@
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photos/Home-image.avif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
-  gap: 4rem;
+  padding-bottom: 6rem;
+  gap: 8rem;
   grid-template-areas: "head" "title" "title" "form" "form" "form";
 }
 .header__top {
@@ -20,13 +20,18 @@
 .header__top #__desktop {
   display: none;
 }
-.header__top__logo {
-  display: grid;
-  grid-area: logo;
+.header__top #__login {
+  display: none;
 }
-.header__top__mobile {
+.header__top .__logo {
   display: grid;
-  grid-area: burger;
+  justify-self: start;
+  padding-left: 2rem;
+}
+.header__top .__mobile {
+  display: grid;
+  justify-self: end;
+  padding-right: 2rem;
 }
 .header__title {
   display: grid;
@@ -150,6 +155,98 @@
 .header__form .__book img {
   width: 1.3rem;
   justify-self: end;
+}
+@media (min-width: 768px) {
+  .header .header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
+  }
+  .header .header__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header .header__top .__logo {
+    display: grid;
+  }
+  .header .header__top .__mobile {
+    display: none;
+  }
+  .header .header__top #__desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+  .header .header__top #__desktop a {
+    color: inherit;
+    font-size: 1.25rem;
+  }
+  .header .header__top #__login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-right: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+  .header .header__top #__login a {
+    display: flex;
+    color: inherit;
+    font-size: 1.25rem;
+    align-items: center;
+  }
+  .header .header__top #__login #sign {
+    background-color: #ff7757;
+    border-radius: 12px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+  }
+  .header .header__title {
+    display: grid;
+    grid-area: title;
+  }
+  .header .header__title h1 {
+    font-size: 5.2rem;
+  }
+  .header .header__title p {
+    font-size: 1.5rem;
+  }
+  .header .header__form {
+    width: 86%;
+    border-radius: 0px 1rem 1rem 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .header__form .__label {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__person {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__chkin {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__chkout {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__book {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 1rem 1rem 0px;
+    gap: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
