@@ -178,6 +178,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+  .header .header__top #__desktop a {
+    color: inherit;
+    font-size: 1.25rem;
   }
   .header .header__top #__login {
     display: flex;
@@ -185,6 +191,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    padding-right: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+  .header .header__top #__login a {
+    display: flex;
+    color: inherit;
+    font-size: 1.25rem;
+    align-items: center;
+  }
+  .header .header__top #__login #sign {
+    background-color: #ff7757;
+    border-radius: 12px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
     padding-right: 2rem;
   }
   .header .header__title {
@@ -198,12 +220,32 @@
     font-size: 1.5rem;
   }
   .header .header__form {
-    width: 100%;
+    width: 86%;
+    border-radius: 0px 1rem 1rem 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .header__form .__label {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__person {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__chkin {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__chkout {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .header__form .__book {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 0px 1rem 1rem 0px;
+    gap: 1rem;
   }
 }
 

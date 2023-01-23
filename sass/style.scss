@@ -265,6 +265,13 @@ $secondary-font: "Rubik", sans-serif;
           flex-wrap: wrap;
           justify-content: space-between;
           gap: 2rem;
+          font-family: $secondary-font;
+          color: white;
+
+          & a {
+            color: inherit;
+            font-size: 1.25rem;
+          }
         }
         #__login {
           display: flex;
@@ -273,6 +280,24 @@ $secondary-font: "Rubik", sans-serif;
           justify-content: space-between;
           gap: 2rem;
           padding-right: 2rem;
+          font-family: $secondary-font;
+          color: white;
+
+          & a {
+            display: flex;
+            color: inherit;
+            font-size: 1.25rem;
+            align-items: center;
+          }
+
+          #sign {
+            background-color: #ff7757;
+            border-radius: 12px;
+            padding-top: 1rem;
+            padding-left: 2rem;
+            padding-bottom: 1rem;
+            padding-right: 2rem;
+          }
         }
       }
 
@@ -288,12 +313,36 @@ $secondary-font: "Rubik", sans-serif;
       }
 
       &__form {
-        width: 100%;
+        width: 86%;
+        border-radius: 0px 1rem 1rem 0px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+
+        .__label {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .__person {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .__chkin {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+        .__chkout {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .__book {
+          display: flex;
+          flex-direction: row;
+          border-radius: 0px 1rem 1rem 0px;
+          gap: 1rem;
+        }
       }
     }
   }
