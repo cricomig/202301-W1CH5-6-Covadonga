@@ -59,14 +59,15 @@ $secondary-font: "Rubik", sans-serif;
 
 .header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/photos/Home-image.avif");
+    url("https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
+
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
-  gap: 4rem;
+  padding-bottom: 6rem;
+  gap: 8rem;
   grid-template-areas:
     "head"
     "title"
@@ -79,6 +80,10 @@ $secondary-font: "Rubik", sans-serif;
     #__desktop {
       display: none;
     }
+    #__login {
+      display: none;
+    }
+
     grid-area: head;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,14 +91,16 @@ $secondary-font: "Rubik", sans-serif;
     justify-items: end;
     align-items: center;
 
-    &__logo {
+    .__logo {
       display: grid;
-      grid-area: logo;
+      justify-self: start;
+      padding-left: 2rem;
     }
 
-    &__mobile {
+    .__mobile {
       display: grid;
-      grid-area: burger;
+      justify-self: end;
+      padding-right: 2rem;
     }
   }
 
@@ -232,6 +239,61 @@ $secondary-font: "Rubik", sans-serif;
       & img {
         width: 1.3rem;
         justify-self: end;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("https://images.unsplash.com/photo-1597339801934-bfb6a88b0010?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
+
+      &__top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .__logo {
+          display: grid;
+        }
+        .__mobile {
+          display: none;
+        }
+        #__desktop {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 2rem;
+        }
+        #__login {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 2rem;
+          padding-right: 2rem;
+        }
+      }
+
+      &__title {
+        display: grid;
+        grid-area: title;
+        & h1 {
+          font-size: 5.2rem;
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+
+      &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }
